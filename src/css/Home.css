@@ -1,0 +1,78 @@
+.home .title {
+    font-size: 80px;
+}
+
+.home {
+    height: 90dvh;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--btn-h);
+    justify-content: left;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.256);
+} .cday {
+    width: 52px;
+    height: 60px;
+    margin: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    color:  var(--mute-font);
+    border-radius: 20px;
+    cursor: default;
+} .cal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    text-transform: lowercase;
+} .c {
+    background-color: var(--bcolor);
+    color: var(--main-font);
+    cursor: pointer;
+} .number {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    font-size: 40px;
+
+    background-color: var(--wdgt);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.256);
+}
+
+.ondayhover {
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--ntf);
+    color: var(--mute-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 80px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.cday:hover .ondayhover {
+    visibility: visible;
+    opacity: 1;
+}
