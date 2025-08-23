@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const getData = () => {
     return async (dispatch) => {
         const fetchData = async () => {
-            const response = await fetch('https://68a48e40c123272fb9b325d0.mockapi.io/sessions');
+            const response = await fetch('https://mikolajjkrol.pythonanywhere.com/sessions');
 
         if (!response.ok){
             const error = new Error('Couldnt fetch!');
